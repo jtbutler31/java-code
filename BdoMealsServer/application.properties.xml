@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applicationproperties>
+
+	<jdbc>	
+		<url>jdbc:mysql://localhost:3306/regis</url>
+		<user>root</user>
+		<password>password</password>
+	</jdbc>
+	<servicemapping>
+		<service>
+			<interface>IMealList</interface>
+			<implementation>com.bdomeals.model.services.meallist.MealListHibernateImpl</implementation>
+		</service>
+		<service>
+			<interface>IMealInputs</interface>
+			<implementation>com.bdomeals.model.services.mealinputs.MealInputsHibernateImpl</implementation>
+		</service>
+	</servicemapping>
+</applicationproperties>
